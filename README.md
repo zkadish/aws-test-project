@@ -6,14 +6,17 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
 
 ## Table of Contents
 
-- [Project Layout](#project-layout)
-- [Setting up the Mern-app project](#setting-up-the-mern-app-project)
-- [Setting up the Mern-app project with Docker](#setting-up-the-mern-app-project-with-docker)
-  - [Install Docker](#install-docker)
-  - [Build and Run the Container](#build-and-run-the-container)
-  - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
-- [Setting up the Mern-app project manually](#setting-up-the-mern-app-project-manually)
-- [Authors](#authors)
+- [MERN App](#mern-app)
+  - [Table of Contents](#table-of-contents)
+  - [Project Layout](#project-layout)
+  - [Project Structure](#project-structure)
+  - [Setting up the `mern-app` project](#setting-up-the-mern-app-project)
+  - [Setting up the `mern-app` project with Docker](#setting-up-the-mern-app-project-with-docker)
+    - [Install Docker](#install-docker)
+    - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
+  - [Setting up the `mern-app` project manually](#setting-up-the-mern-app-project-manually)
+  - [Author](#author)
+  - [Good stuff](#good-stuff)
 
 ---
 
@@ -167,3 +170,9 @@ React then will create a `build` directory with a production build of your app w
 Created by:
 
 - [Ryuichi Miyazaki](https://github.com/rmiyazaki6499)
+
+## Good stuff
+
+- https://dev.to/rmiyazaki6499/deploying-a-production-ready-react-express-app-on-aws-62m
+- ssh -i "aws-ec2-test.pem" ec2-user@ec2-54-176-108-178.us-west-1.compute.amazonaws.com
+- pm2 start app.js -i max --watch
