@@ -16,7 +16,10 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
     - [Cleaning up the Container and Image](#cleaning-up-the-container-and-image)
   - [Setting up the `mern-app` project manually](#setting-up-the-mern-app-project-manually)
   - [Author](#author)
-  - [Good stuff](#good-stuff)
+  - [The Good stuff](#the-good-stuff)
+  - [the tutorial:](#the-tutorial)
+  - [log into your ec2 instance](#log-into-your-ec2-instance)
+  - [start the app](#start-the-app)
 
 ---
 
@@ -86,7 +89,7 @@ This repository contains a simple MERN app as part of the **Deploying a Producti
 
   **This may take a few moments**
   
-  Navigate to http://localhost:5000 to view the site on the local server.
+  Navigate to http://localhost:5001 to view the site on the local server.
 It should look something like this:
 
   ![mern-app_react_success](https://user-images.githubusercontent.com/41876764/87258255-09924080-c457-11ea-97bd-40ad8784a00b.png)
@@ -140,7 +143,7 @@ It should look something like this:
   
   ![mern-app_run_server](https://user-images.githubusercontent.com/41876764/87258208-ad2f2100-c456-11ea-80c9-7ca9a3624462.png)
   
-  You can see that we have the express server running on port `5000`.
+  You can see that we have the express server running on port `5001`.
   
   - Now switch back to the http://localhost:3000 and refresh the page. You should see the Message at the bottom be updated!
   
@@ -159,7 +162,7 @@ $ npm run-script build
   
 React then will create a `build` directory with a production build of your app which is where our Express server will use to serve the frontend.
   
-- Now if you go to http://localhost:5000 you should see the same React page from earlier!
+- Now if you go to http://localhost:5001 you should see the same React page from earlier!
   
 
 [Back to Table of Contents](#table-of-contents)
@@ -171,8 +174,15 @@ Created by:
 
 - [Ryuichi Miyazaki](https://github.com/rmiyazaki6499)
 
-## Good stuff
+## The Good stuff
+## the tutorial:
 
 - https://dev.to/rmiyazaki6499/deploying-a-production-ready-react-express-app-on-aws-62m
+
+## log into your ec2 instance
+
 - ssh -i "aws-ec2-test.pem" ec2-user@ec2-54-176-108-178.us-west-1.compute.amazonaws.com
+
+## start the app
+
 - pm2 start app.js -i max --watch
